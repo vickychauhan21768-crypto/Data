@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Jobs - JobHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">JobHub</div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/jobs">Browse Jobs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Available Jobs</h1>
+      <p>Explore all job opportunities</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="all-jobs">
+      <div id="jobsList" class="jobs-list"></div>
+      <div id="noJobs" class="no-jobs">
+        <p>No jobs posted yet. <a href="/">Post a job now!</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 JobHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    loadAllJobs();
+  </script>
+</body>
+</html>

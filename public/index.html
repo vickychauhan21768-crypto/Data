@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Booking Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">JobHub</div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/jobs">Browse Jobs</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Find Your Perfect Job</h1>
+      <p>Post and discover amazing job opportunities</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Post a New Job</h2>
+      <form id="jobForm" class="job-form">
+        <div class="form-group">
+          <label for="title">Job Title</label>
+          <input type="text" id="title" placeholder="e.g., Senior Developer" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="Describe the job responsibilities and requirements" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="e.g., New York, NY" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Job</button>
+      </form>
+      <div id="message" class="message"></div>
+    </section>
+
+    <section class="recent-jobs">
+      <h2>Recently Posted Jobs</h2>
+      <div id="jobsList" class="jobs-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 JobHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
